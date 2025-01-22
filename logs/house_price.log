@@ -1,0 +1,192 @@
+2025-01-22 17:38:44 | house_price | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:38:44 | house_price | INFO | Configuration loaded successfully
+2025-01-22 17:38:44 | house_price | INFO | Deleted existing MLflow database
+2025-01-22 17:38:44 | house_price | INFO | Starting pipeline execution
+2025-01-22 17:38:46 | house_price | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:38:46 | house_price | INFO | Experiment name: house_price_experiment
+2025-01-22 17:38:46 | house_price | INFO | Started pipeline run with ID: 10f135b9ef2443868095d7fa70a0d72e
+2025-01-22 17:38:46 | house_price | INFO | Step 1: Loading data
+2025-01-22 17:38:46 | house_price | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 17:38:46 | house_price | INFO | Loading data from artifacts/train.csv
+2025-01-22 17:38:46 | house_price | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 17:38:46 | house_price | INFO | Validating data
+2025-01-22 17:38:46 | house_price | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 17:38:46 | house_price | INFO | Data validation completed
+2025-01-22 17:38:46 | house_price | INFO | Step 2: Preprocessing data
+2025-01-22 17:38:46 | house_price | INFO | Initialized DataProcessor
+2025-01-22 17:38:46 | house_price | INFO | Starting fit_transform process
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: MSZoning
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Street
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Alley
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: LotShape
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: LandContour
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Utilities
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: LotConfig
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: LandSlope
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Neighborhood
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Condition1
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Condition2
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: BldgType
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: HouseStyle
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: RoofStyle
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: RoofMatl
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Exterior1st
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Exterior2nd
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: MasVnrType
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: ExterQual
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: ExterCond
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Foundation
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: BsmtQual
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: BsmtCond
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: BsmtExposure
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: BsmtFinType1
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: BsmtFinType2
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Heating
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: HeatingQC
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: CentralAir
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Electrical
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: KitchenQual
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Functional
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: FireplaceQu
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: GarageType
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: GarageFinish
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: GarageQual
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: GarageCond
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: PavedDrive
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: PoolQC
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: Fence
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: MiscFeature
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: SaleType
+2025-01-22 17:38:47 | house_price | INFO | Fitting LabelEncoder for column: SaleCondition
+2025-01-22 17:38:47 | house_price | INFO | Fitting StandardScaler for numerical columns
+2025-01-22 17:38:47 | house_price | INFO | Fit_transform completed successfully
+2025-01-22 17:38:47 | house_price | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 17:38:47 | house_price | INFO | Preprocessors saved successfully
+2025-01-22 17:38:47 | house_price | INFO | Step 3: Training and evaluating models
+2025-01-22 17:38:47 | house_price | INFO | MLflow setup completed successfully
+2025-01-22 17:38:47 | house_price | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 17:38:47 | house_price | INFO | Starting training of all models
+2025-01-22 17:38:47 | house_price | INFO | Training random_forest model
+2025-01-22 17:38:47 | house_price | INFO | Creating model of type: random_forest
+2025-01-22 17:38:47 | house_price | INFO | Successfully created random_forest model
+2025-01-22 17:38:50 | house_price | ERROR | Error training random_forest model: 'RandomForestRegressor' object has no attribute 'predict_proba'
+2025-01-22 17:38:50 | house_price | ERROR | Error training models: 'RandomForestRegressor' object has no attribute 'predict_proba'
+2025-01-22 17:38:50 | house_price | ERROR | Pipeline execution failed: 'RandomForestRegressor' object has no attribute 'predict_proba'
+2025-01-22 17:45:54 | house_price | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:45:54 | house_price | INFO | Configuration loaded successfully
+2025-01-22 17:46:09 | house_price | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:46:09 | house_price | INFO | Configuration loaded successfully
+2025-01-22 17:46:24 | house_price | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:46:24 | house_price | INFO | Configuration loaded successfully
+2025-01-22 17:46:25 | house_price | INFO | Deleted existing MLflow database
+2025-01-22 17:46:25 | house_price | INFO | Starting pipeline execution
+2025-01-22 17:46:27 | house_price | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:46:27 | house_price | INFO | Experiment name: house_price_experiment
+2025-01-22 17:46:27 | house_price | INFO | Started pipeline run with ID: bed54e4826274ea9ad35309533adc56e
+2025-01-22 17:46:27 | house_price | INFO | Step 1: Loading data
+2025-01-22 17:46:27 | house_price | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 17:46:27 | house_price | INFO | Loading data from artifacts/train.csv
+2025-01-22 17:46:27 | house_price | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 17:46:27 | house_price | INFO | Validating data
+2025-01-22 17:46:27 | house_price | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 17:46:27 | house_price | INFO | Data validation completed
+2025-01-22 17:46:27 | house_price | INFO | Step 2: Preprocessing data
+2025-01-22 17:46:27 | house_price | INFO | Initialized DataProcessor
+2025-01-22 17:46:27 | house_price | INFO | Starting fit_transform process
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: MSZoning
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Street
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Alley
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: LotShape
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: LandContour
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Utilities
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: LotConfig
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: LandSlope
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Neighborhood
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Condition1
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Condition2
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: BldgType
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: HouseStyle
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: RoofStyle
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: RoofMatl
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Exterior1st
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Exterior2nd
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: MasVnrType
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: ExterQual
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: ExterCond
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Foundation
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: BsmtQual
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: BsmtCond
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: BsmtExposure
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: BsmtFinType1
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: BsmtFinType2
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Heating
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: HeatingQC
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: CentralAir
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Electrical
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: KitchenQual
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Functional
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: FireplaceQu
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: GarageType
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: GarageFinish
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: GarageQual
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: GarageCond
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: PavedDrive
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: PoolQC
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: Fence
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: MiscFeature
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: SaleType
+2025-01-22 17:46:27 | house_price | INFO | Fitting LabelEncoder for column: SaleCondition
+2025-01-22 17:46:27 | house_price | INFO | Fitting StandardScaler for numerical columns
+2025-01-22 17:46:27 | house_price | INFO | Fit_transform completed successfully
+2025-01-22 17:46:27 | house_price | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 17:46:27 | house_price | INFO | Preprocessors saved successfully
+2025-01-22 17:46:27 | house_price | INFO | Step 3: Training and evaluating models
+2025-01-22 17:46:28 | house_price | INFO | MLflow setup completed successfully
+2025-01-22 17:46:28 | house_price | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 17:46:28 | house_price | INFO | Starting training of all models
+2025-01-22 17:46:28 | house_price | INFO | Training random_forest model
+2025-01-22 17:46:28 | house_price | INFO | Creating model of type: random_forest
+2025-01-22 17:46:28 | house_price | INFO | Successfully created random_forest model
+2025-01-22 17:46:30 | house_price | ERROR | Error training random_forest model: 'RandomForestRegressor' object has no attribute 'predict_proba'
+2025-01-22 17:46:30 | house_price | ERROR | Error training models: 'RandomForestRegressor' object has no attribute 'predict_proba'
+2025-01-22 17:46:30 | house_price | ERROR | Pipeline execution failed: 'RandomForestRegressor' object has no attribute 'predict_proba'

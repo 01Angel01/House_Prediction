@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" # Akses FastAPI di host melalui port 8000
+    volumes:
+      - .:/app # Sinkronisasi kode lokal ke dalam container untuk pengembangan
+    environment:
+      - MLFLOW_TRACKING_URI=sqlite:///mlflow.db
+    depends_on:
+      - mlflow # Pastikan MLflow berjalan sebelum FastAPI
+    restart: always
+
+  mlflow:
+    image: mlflow:2.0.1 # Gunakan image resmi MLflow
+    ports:
+      - "5000:5000" # Akses MLflow UI di host melalui port 5000
+    volumes:
+      - ./mlruns:/mlflow/artifacts # Simpan artifacts MLflow ke folder lokal
+      - ./mlflow.db:/mlflow/mlflow.db # Database MLflow SQLite
+    environment:
+      - MLFLOW_BACKEND_STORE_URI=sqlite:///mlflow/mlflow.db
+      - MLFLOW_ARTIFACT_ROOT=/mlflow/artifacts
+    restart: always

@@ -1,0 +1,13 @@
+prefix=D:/Folder/New_folder/WOLF/Dibimbing/Machine Learning Engineer/Baru/Day 26/Assignment_2/Assignment/mlops/Library
+exec_prefix=D:/Folder/New_folder/WOLF/Dibimbing/Machine Learning Engineer/Baru/Day 26/Assignment_2/Assignment/mlops/Library
+libdir=D:/Folder/New_folder/WOLF/Dibimbing/Machine Learning Engineer/Baru/Day 26/Assignment_2/Assignment/mlops/Library/lib
+sharedlibdir=D:/Folder/New_folder/WOLF/Dibimbing/Machine Learning Engineer/Baru/Day 26/Assignment_2/Assignment/mlops/Library/lib
+includedir=D:/Folder/New_folder/WOLF/Dibimbing/Machine Learning Engineer/Baru/Day 26/Assignment_2/Assignment/mlops/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

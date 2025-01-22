@@ -1,0 +1,764 @@
+2025-01-22 17:49:12 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:49:12 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 17:49:12 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 17:49:12 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 17:49:14 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:49:14 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 17:49:14 | house_prediction | INFO | Started pipeline run with ID: 48e1ab18231b417aaf1cf03153ecf590
+2025-01-22 17:49:14 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 17:49:14 | house_prediction | INFO | Initialized DataLoader with path: None
+2025-01-22 17:49:14 | house_prediction | INFO | Start loading data...
+2025-01-22 17:49:14 | house_prediction | ERROR | Error loading data: Data path is not specified.
+2025-01-22 17:49:14 | house_prediction | ERROR | Pipeline execution failed: Data path is not specified.
+2025-01-22 17:49:45 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:49:45 | house_prediction | ERROR | Error loading configuration: while parsing a block mapping
+  in "config\config.yaml", line 3, column 1
+expected <block end>, but found '<block mapping start>'
+  in "config\config.yaml", line 6, column 3
+2025-01-22 17:50:07 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:50:07 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 17:50:07 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 17:50:07 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 17:50:09 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:50:09 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 17:50:10 | house_prediction | INFO | Started pipeline run with ID: cd40f464fa58467694f1db3cc0bc1dc7
+2025-01-22 17:50:10 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 17:50:10 | house_prediction | INFO | Initialized DataLoader with path: None
+2025-01-22 17:50:10 | house_prediction | INFO | Start loading data...
+2025-01-22 17:50:10 | house_prediction | ERROR | Error loading data: Data path is not specified.
+2025-01-22 17:50:10 | house_prediction | ERROR | Pipeline execution failed: Data path is not specified.
+2025-01-22 17:55:04 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:55:04 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 17:55:04 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 17:55:04 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 17:55:07 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:55:07 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 17:55:07 | house_prediction | INFO | Started pipeline run with ID: fe19e83e16184f01a3e466ec5123b2e3
+2025-01-22 17:55:07 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 17:55:07 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 17:55:07 | house_prediction | INFO | Start loading data...
+2025-01-22 17:55:07 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 17:55:07 | house_prediction | INFO | Validating data...
+2025-01-22 17:55:07 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 17:55:07 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 17:55:07 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 17:55:07 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 17:55:07 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 17:55:07 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 17:55:07 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 17:55:07 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 17:55:07 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 17:55:07 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 17:55:07 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 17:55:07 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 17:55:07 | house_prediction | INFO | Starting training for all models
+2025-01-22 17:55:07 | house_prediction | INFO | Training decision_tree model
+2025-01-22 17:55:07 | house_prediction | ERROR | Error training decision_tree model: 'numpy.ndarray' object has no attribute 'empty'
+2025-01-22 17:55:07 | house_prediction | ERROR | Error training all models: 'numpy.ndarray' object has no attribute 'empty'
+2025-01-22 17:55:07 | house_prediction | ERROR | Pipeline execution failed: 'numpy.ndarray' object has no attribute 'empty'
+2025-01-22 17:55:34 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:55:34 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 17:55:35 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 17:55:35 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 17:55:37 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:55:37 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 17:55:37 | house_prediction | INFO | Started pipeline run with ID: 63ed501ad1634d489e177449c9d7f5a3
+2025-01-22 17:55:37 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 17:55:37 | house_prediction | INFO | Initialized DataLoader with path: None
+2025-01-22 17:55:37 | house_prediction | INFO | Start loading data...
+2025-01-22 17:55:37 | house_prediction | ERROR | Error loading data: Data path is not specified.
+2025-01-22 17:55:37 | house_prediction | ERROR | Pipeline execution failed: Data path is not specified.
+2025-01-22 17:56:03 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 17:56:03 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 17:56:04 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 17:56:04 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 17:56:06 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 17:56:06 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 17:56:06 | house_prediction | INFO | Started pipeline run with ID: f5193c2eed484deba3eb8ed3b064d24d
+2025-01-22 17:56:06 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 17:56:06 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 17:56:06 | house_prediction | INFO | Start loading data...
+2025-01-22 17:56:06 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 17:56:06 | house_prediction | INFO | Validating data...
+2025-01-22 17:56:06 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 17:56:06 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 17:56:06 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 17:56:06 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 17:56:06 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 17:56:06 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 17:56:06 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 17:56:06 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 17:56:06 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 17:56:06 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 17:56:06 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 17:56:06 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 17:56:06 | house_prediction | INFO | Starting training for all models
+2025-01-22 17:56:06 | house_prediction | INFO | Training decision_tree model
+2025-01-22 17:56:06 | house_prediction | ERROR | Error training decision_tree model: 'numpy.ndarray' object has no attribute 'empty'
+2025-01-22 17:56:06 | house_prediction | ERROR | Error training all models: 'numpy.ndarray' object has no attribute 'empty'
+2025-01-22 17:56:06 | house_prediction | ERROR | Pipeline execution failed: 'numpy.ndarray' object has no attribute 'empty'
+2025-01-22 18:02:29 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:02:29 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:02:29 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 18:02:29 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 18:02:31 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 18:02:31 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 18:02:32 | house_prediction | INFO | Started pipeline run with ID: 1843d3574955481eb3dd951ab7fbee8a
+2025-01-22 18:02:32 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 18:02:32 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 18:02:32 | house_prediction | INFO | Start loading data...
+2025-01-22 18:02:32 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 18:02:32 | house_prediction | INFO | Validating data...
+2025-01-22 18:02:32 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 18:02:32 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 18:02:32 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 18:02:32 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 18:02:32 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 18:02:32 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 18:02:32 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 18:02:32 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 18:02:32 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 18:02:32 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 18:02:32 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 18:02:32 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 18:02:32 | house_prediction | INFO | Starting training for all models
+2025-01-22 18:02:32 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 18:02:32 | house_prediction | INFO | Training decision_tree model
+2025-01-22 18:02:32 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 18:02:32 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 18:02:40 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5648189621.2771015, 'rmse': 75154.43846691359, 'r2': 0.2636311065903917}
+2025-01-22 18:02:40 | house_prediction | INFO | Training model: random_forest
+2025-01-22 18:02:40 | house_prediction | INFO | Training random_forest model
+2025-01-22 18:02:40 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 18:02:40 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 18:02:47 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5247759249.037949, 'rmse': 72441.4194300329, 'r2': 0.3158362359972672}
+2025-01-22 18:02:47 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 18:02:47 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 18:02:47 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 18:02:47 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 18:02:47 | house_prediction | ERROR | Error training gradient_boosting model: Input X contains NaN.
+GradientBoostingRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-01-22 18:02:47 | house_prediction | ERROR | Error training all models: Input X contains NaN.
+GradientBoostingRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-01-22 18:02:47 | house_prediction | ERROR | Pipeline execution failed: Input X contains NaN.
+GradientBoostingRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-01-22 18:05:13 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:05:13 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:05:14 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 18:05:14 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 18:05:16 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 18:05:16 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 18:05:16 | house_prediction | INFO | Started pipeline run with ID: c4c28c6cd7ea4ab2889df05b1ba756fd
+2025-01-22 18:05:16 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 18:05:16 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 18:05:16 | house_prediction | INFO | Start loading data...
+2025-01-22 18:05:16 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 18:05:16 | house_prediction | INFO | Validating data...
+2025-01-22 18:05:16 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 18:05:16 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 18:05:16 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 18:05:16 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 18:05:16 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 18:05:16 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 18:05:16 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 18:05:16 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 18:05:16 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 18:05:16 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 18:05:16 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 18:05:16 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 18:05:16 | house_prediction | INFO | Starting training for all models
+2025-01-22 18:05:16 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 18:05:16 | house_prediction | INFO | Training decision_tree model
+2025-01-22 18:05:16 | house_prediction | ERROR | Error training decision_tree model: 'numpy.ndarray' object has no attribute 'columns'
+2025-01-22 18:05:16 | house_prediction | ERROR | Error training all models: 'numpy.ndarray' object has no attribute 'columns'
+2025-01-22 18:05:17 | house_prediction | ERROR | Pipeline execution failed: 'numpy.ndarray' object has no attribute 'columns'
+2025-01-22 18:07:14 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:07:14 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:07:14 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 18:07:14 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 18:07:16 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 18:07:16 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 18:07:17 | house_prediction | INFO | Started pipeline run with ID: c5692a7cbfc74fb9b9eb2780bea4fd7f
+2025-01-22 18:07:17 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 18:07:17 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 18:07:17 | house_prediction | INFO | Start loading data...
+2025-01-22 18:07:17 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 18:07:17 | house_prediction | INFO | Validating data...
+2025-01-22 18:07:17 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 18:07:17 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 18:07:17 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 18:07:17 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 18:07:17 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 18:07:17 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 18:07:17 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 18:07:17 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 18:07:17 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 18:07:17 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 18:07:17 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 18:07:17 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 18:07:17 | house_prediction | INFO | Starting training for all models
+2025-01-22 18:07:17 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 18:07:17 | house_prediction | INFO | Training decision_tree model
+2025-01-22 18:07:17 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 18:07:17 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 18:07:25 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 18:07:25 | house_prediction | INFO | Training model: random_forest
+2025-01-22 18:07:25 | house_prediction | INFO | Training random_forest model
+2025-01-22 18:07:25 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 18:07:25 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 18:07:32 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 18:07:32 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 18:07:32 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 18:07:32 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 18:07:32 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 18:07:38 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 18:07:38 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 18:07:38 | house_prediction | ERROR | Pipeline execution failed: 'ModelTrainer' object has no attribute 'get_best_model'
+2025-01-22 18:12:05 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:12:05 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:12:05 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 18:12:05 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 18:12:08 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 18:12:08 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 18:12:08 | house_prediction | INFO | Started pipeline run with ID: ae3262559cbf4fab83336c223e78b664
+2025-01-22 18:12:08 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 18:12:08 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 18:12:08 | house_prediction | INFO | Start loading data...
+2025-01-22 18:12:08 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 18:12:08 | house_prediction | INFO | Validating data...
+2025-01-22 18:12:08 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 18:12:08 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 18:12:08 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 18:12:08 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 18:12:08 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 18:12:08 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 18:12:08 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 18:12:08 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 18:12:08 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 18:12:08 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 18:12:08 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 18:12:08 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 18:12:08 | house_prediction | INFO | Starting training for all models
+2025-01-22 18:12:08 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 18:12:08 | house_prediction | INFO | Training decision_tree model
+2025-01-22 18:12:08 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 18:12:08 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 18:12:16 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 18:12:16 | house_prediction | INFO | Training model: random_forest
+2025-01-22 18:12:16 | house_prediction | INFO | Training random_forest model
+2025-01-22 18:12:16 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 18:12:16 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 18:12:22 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 18:12:22 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 18:12:22 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 18:12:22 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 18:12:22 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 18:12:29 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 18:12:29 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 18:12:29 | house_prediction | INFO | Pipeline execution completed successfully
+2025-01-22 18:52:11 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:52:11 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:52:11 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 18:52:11 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 18:52:42 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:52:42 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:52:42 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 18:52:42 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 18:53:12 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:53:12 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:53:12 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 18:53:12 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 18:53:23 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:53:23 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:53:23 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 18:53:23 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 18:56:02 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:56:02 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:56:02 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 18:56:02 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 18:57:02 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:57:02 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:58:43 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 18:58:43 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 18:58:43 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 18:58:43 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 19:00:56 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:00:56 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:00:56 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:00:56 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 19:02:56 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:02:56 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:02:56 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:02:56 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 19:07:35 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:07:35 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:07:35 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:07:35 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 19:09:55 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:09:55 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:09:55 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:09:55 | house_prediction | ERROR | Error loading model: No experiment found with name 'house_price_experiment'
+2025-01-22 19:16:12 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:16:12 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:16:12 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 19:16:12 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 19:16:15 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 19:16:15 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 19:16:15 | house_prediction | INFO | Started pipeline run with ID: 600d85bc01cb4102aaef6fd88d09e48c
+2025-01-22 19:16:15 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 19:16:15 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 19:16:15 | house_prediction | INFO | Start loading data...
+2025-01-22 19:16:15 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 19:16:15 | house_prediction | INFO | Validating data...
+2025-01-22 19:16:15 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 19:16:15 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 19:16:15 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 19:16:15 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 19:16:15 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 19:16:15 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 19:16:15 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 19:16:15 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 19:16:15 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 19:16:15 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 19:16:15 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 19:16:15 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 19:16:15 | house_prediction | INFO | Starting training for all models
+2025-01-22 19:16:15 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 19:16:15 | house_prediction | INFO | Training decision_tree model
+2025-01-22 19:16:15 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 19:16:15 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 19:16:24 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 19:16:24 | house_prediction | INFO | Training model: random_forest
+2025-01-22 19:16:24 | house_prediction | INFO | Training random_forest model
+2025-01-22 19:16:24 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 19:16:24 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 19:16:31 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 19:16:31 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 19:16:31 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 19:16:31 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 19:16:31 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 19:16:38 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 19:16:38 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 19:16:38 | house_prediction | INFO | Pipeline execution completed successfully
+2025-01-22 19:17:24 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:17:24 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:17:24 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:17:24 | house_prediction | ERROR | Error loading model: No runs found in the experiment
+2025-01-22 19:23:32 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:23:32 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:23:32 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 19:23:32 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 19:23:34 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 19:23:34 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 19:23:34 | house_prediction | INFO | Started pipeline run with ID: 483e83fbe2cd43bba77abd94cb881ec5
+2025-01-22 19:23:34 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 19:23:34 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 19:23:34 | house_prediction | INFO | Start loading data...
+2025-01-22 19:23:34 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 19:23:34 | house_prediction | INFO | Validating data...
+2025-01-22 19:23:34 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 19:23:34 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 19:23:35 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 19:23:35 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 19:23:35 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 19:23:35 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 19:23:35 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 19:23:35 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 19:23:35 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 19:23:35 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 19:23:35 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 19:23:35 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 19:23:35 | house_prediction | INFO | Starting training for all models
+2025-01-22 19:23:35 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 19:23:35 | house_prediction | INFO | Training decision_tree model
+2025-01-22 19:23:35 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 19:23:35 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 19:23:43 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 19:23:43 | house_prediction | INFO | Training model: random_forest
+2025-01-22 19:23:43 | house_prediction | INFO | Training random_forest model
+2025-01-22 19:23:43 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 19:23:43 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 19:23:50 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 19:23:50 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 19:23:50 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 19:23:50 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 19:23:50 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 19:23:56 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 19:23:56 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 19:23:57 | house_prediction | INFO | Pipeline execution completed successfully
+2025-01-22 19:24:07 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:24:07 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:24:07 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:24:07 | house_prediction | ERROR | Error loading model: No runs found in the experiment
+2025-01-22 19:26:26 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 19:26:26 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 19:26:26 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 19:26:26 | house_prediction | ERROR | Error loading model: No runs found in the experiment
+2025-01-22 22:41:32 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:41:32 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:41:32 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 22:41:32 | house_prediction | ERROR | Error loading model: No runs found in the experiment
+2025-01-22 22:44:17 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:44:17 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:44:17 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 22:44:17 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 22:44:19 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 22:44:19 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 22:44:20 | house_prediction | INFO | Started pipeline run with ID: 23987d802e224a6189a8c96a3cc9efa3
+2025-01-22 22:44:20 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 22:44:20 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 22:44:20 | house_prediction | INFO | Start loading data...
+2025-01-22 22:44:20 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 22:44:20 | house_prediction | INFO | Validating data...
+2025-01-22 22:44:20 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 22:44:20 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 22:44:20 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 22:44:20 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 22:44:20 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 22:44:20 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 22:44:20 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 22:44:20 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 22:44:20 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 22:44:20 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 22:44:20 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 22:44:20 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 22:44:20 | house_prediction | INFO | Starting training for all models
+2025-01-22 22:44:20 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 22:44:20 | house_prediction | INFO | Training decision_tree model
+2025-01-22 22:44:20 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 22:44:20 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 22:44:29 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 22:44:29 | house_prediction | INFO | Training model: random_forest
+2025-01-22 22:44:29 | house_prediction | INFO | Training random_forest model
+2025-01-22 22:44:29 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 22:44:29 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 22:44:37 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 22:44:37 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 22:44:37 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 22:44:37 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 22:44:37 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 22:44:44 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 22:44:44 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 22:44:44 | house_prediction | INFO | Pipeline execution completed successfully
+2025-01-22 22:44:53 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:44:53 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:44:53 | house_prediction | INFO | Deleted existing MLflow database
+2025-01-22 22:44:53 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 22:44:56 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-01-22 22:44:56 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 22:44:56 | house_prediction | INFO | Started pipeline run with ID: f03e95f9e4624919869cc393e2c67d54
+2025-01-22 22:44:56 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 22:44:56 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 22:44:56 | house_prediction | INFO | Start loading data...
+2025-01-22 22:44:56 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 22:44:56 | house_prediction | INFO | Validating data...
+2025-01-22 22:44:56 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 22:44:56 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 22:44:56 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 22:44:56 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 22:44:56 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 22:44:56 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 22:44:56 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 22:44:56 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 22:44:56 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 22:44:56 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 22:44:56 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 22:44:56 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 22:44:56 | house_prediction | INFO | Starting training for all models
+2025-01-22 22:44:56 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 22:44:56 | house_prediction | INFO | Training decision_tree model
+2025-01-22 22:44:56 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 22:44:56 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 22:45:05 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 22:45:05 | house_prediction | INFO | Training model: random_forest
+2025-01-22 22:45:05 | house_prediction | INFO | Training random_forest model
+2025-01-22 22:45:05 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 22:45:05 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 22:45:13 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 22:45:13 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 22:45:13 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 22:45:13 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 22:45:13 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 22:45:20 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 22:45:20 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 22:45:20 | house_prediction | INFO | Pipeline execution completed successfully
+2025-01-22 22:53:09 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:53:09 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:53:09 | house_prediction | INFO | Starting pipeline execution
+2025-01-22 22:53:10 | house_prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///D:\Folder\New_folder\WOLF\Dibimbing\Machine Learning Engineer\Baru\Day 26\Assignment_2\Assignment\mlflow.db
+2025-01-22 22:53:10 | house_prediction | INFO | Experiment name: house_price_experiment
+2025-01-22 22:53:11 | house_prediction | INFO | Started pipeline run with ID: 0d1c9caee2454941942fc39330f8f741
+2025-01-22 22:53:11 | house_prediction | INFO | Step 1: Loading data
+2025-01-22 22:53:11 | house_prediction | INFO | Initialized DataLoader with path: artifacts/train.csv
+2025-01-22 22:53:11 | house_prediction | INFO | Start loading data...
+2025-01-22 22:53:11 | house_prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-01-22 22:53:11 | house_prediction | INFO | Validating data...
+2025-01-22 22:53:11 | house_prediction | WARNING | Found null values in the following columns:
+LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-01-22 22:53:11 | house_prediction | INFO | Data validation completed successfully.
+2025-01-22 22:53:11 | house_prediction | INFO | Step 2: Preprocessing data
+2025-01-22 22:53:11 | house_prediction | INFO | Initialized DataProcessor
+2025-01-22 22:53:11 | house_prediction | INFO | Starting fit_transform process
+2025-01-22 22:53:11 | house_prediction | INFO | Fitting preprocessors and transforming data
+2025-01-22 22:53:11 | house_prediction | INFO | Fit_transform completed successfully
+2025-01-22 22:53:11 | house_prediction | INFO | Saving preprocessors to models/preprocessing
+2025-01-22 22:53:11 | house_prediction | INFO | Preprocessors saved successfully
+2025-01-22 22:53:11 | house_prediction | INFO | Step 3: Training and evaluating models
+2025-01-22 22:53:11 | house_prediction | INFO | MLflow setup completed successfully
+2025-01-22 22:53:11 | house_prediction | INFO | Initialized ModelTrainer with experiment: house_price_experiment
+2025-01-22 22:53:11 | house_prediction | INFO | Starting training for all models
+2025-01-22 22:53:11 | house_prediction | INFO | Training model: decision_tree
+2025-01-22 22:53:11 | house_prediction | INFO | Training decision_tree model
+2025-01-22 22:53:11 | house_prediction | INFO | Creating model of type: decision_tree
+2025-01-22 22:53:11 | house_prediction | INFO | Successfully created decision_tree model
+2025-01-22 22:53:19 | house_prediction | INFO | Completed training decision_tree model with metrics: {'mse': 5642830093.816416, 'rmse': 75118.77324488477, 'r2': 0.2643298418613459}
+2025-01-22 22:53:19 | house_prediction | INFO | Training model: random_forest
+2025-01-22 22:53:19 | house_prediction | INFO | Training random_forest model
+2025-01-22 22:53:19 | house_prediction | INFO | Creating model of type: random_forest
+2025-01-22 22:53:19 | house_prediction | INFO | Successfully created random_forest model
+2025-01-22 22:53:27 | house_prediction | INFO | Completed training random_forest model with metrics: {'mse': 5295004018.0446205, 'rmse': 72766.7782579703, 'r2': 0.30967681490740495}
+2025-01-22 22:53:27 | house_prediction | INFO | Training model: gradient_boosting
+2025-01-22 22:53:27 | house_prediction | INFO | Training gradient_boosting model
+2025-01-22 22:53:27 | house_prediction | INFO | Creating model of type: gradient_boosting
+2025-01-22 22:53:27 | house_prediction | INFO | Successfully created gradient_boosting model
+2025-01-22 22:53:34 | house_prediction | INFO | Completed training gradient_boosting model with metrics: {'mse': 4626041392.811133, 'rmse': 68015.00858495229, 'r2': 0.39689117935081886}
+2025-01-22 22:53:34 | house_prediction | INFO | Best model selected with RMSE: 68015.00858495229
+2025-01-22 22:53:34 | house_prediction | INFO | Pipeline execution completed successfully
+2025-01-22 22:53:50 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:53:50 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:53:50 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 22:53:50 | house_prediction | ERROR | Error loading model: No runs found in the experiment
+2025-01-22 22:57:04 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:57:04 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:57:04 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 22:57:04 | house_prediction | ERROR | No runs found in the experiment
+2025-01-22 22:57:04 | house_prediction | ERROR | Error during startup: No runs found in the experiment
+2025-01-22 22:57:35 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 22:57:35 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 22:57:36 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 22:57:36 | house_prediction | ERROR | No runs found in the experiment
+2025-01-22 22:57:36 | house_prediction | ERROR | Error during startup: No runs found in the experiment
+2025-01-22 23:01:22 | house_prediction | INFO | Loading configuration from config\config.yaml
+2025-01-22 23:01:22 | house_prediction | INFO | Configuration loaded successfully: {'data_path': 'artifacts/train.csv', 'data': {'preprocessing_path': 'models/preprocessing', 'target_column': 'SalePrice', 'required_columns': ['Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'SalePrice']}, 'categorical_features': ['MSZoning', 'Street'], 'numerical_features': ['LotFrontage', 'LotArea'], 'model_params': {'decision_tree': {'max_depth': 5, 'min_samples_split': 2, 'random_state': 42}, 'random_forest': {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2, 'random_state': 42}, 'gradient_boosting': {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 3, 'random_state': 42}}, 'mlflow': {'tracking_uri': 'sqlite:///mlflow.db', 'experiment_name': 'house_price_experiment'}, 'api': {'title': 'House Price Prediction API', 'description': 'API for predicting house prices', 'version': '1.0.0', 'host': '0.0.0.0', 'port': 8000}}
+2025-01-22 23:01:22 | house_prediction | INFO | Loading the best model and preprocessor from MLflow.
+2025-01-22 23:01:22 | house_prediction | ERROR | No runs found in the experiment
+2025-01-22 23:01:22 | house_prediction | ERROR | Error during startup: No runs found in the experiment
